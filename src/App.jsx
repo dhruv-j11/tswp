@@ -927,10 +927,7 @@ function HeroSection({ setPage }) {
   return (
     <section className="hero">
       <div className="hero-video-bg">
-      <video ref={videoRef} autoPlay muted loop playsInline
-  style={{ opacity: 0, transition: 'opacity 0.3s ease' }}
-  onLoadedData={(e) => { e.target.style.opacity = 1; }}
->
+      <video ref={videoRef} autoPlay muted loop playsInline>
           <source src="/waterfootage.mp4" type="video/mp4" />
         </video>
       </div>
@@ -1227,7 +1224,7 @@ function ContactPage() {
       <CustomMascot src="/mailguy.png" size={252} top={130} right={430} style={{opacity:0.3,zIndex:2}}/>
 
       <div className="section" style={{ paddingTop: 160, position: 'relative', zIndex: 1 }}>
-        <Reveal><div className="section-label">Conta  ct</div></Reveal>
+        <Reveal><div className="section-label">Contact</div></Reveal>
         <Reveal delay={50}><h2 className="section-title">Get in touch</h2></Reveal>
         <Reveal delay={100}><p className="section-subtitle">Questions, partnerships, media inquiries. We'd love to hear from you.</p></Reveal>
         <div className="contact-grid">
@@ -1261,7 +1258,7 @@ function ContactPage() {
                 <div>studentwaterproject@gmail.com</div>
               </div>
               <div className="contact-detail">
-                <div className="cd-icon"><img src="/Water_Droplet_Waving.png" alt="" /></div>
+                <div className="cd-icon"><img src="/locationguy.png" alt="" /></div>
                 <div>Toronto, Ontario, Canada</div>
               </div>
               <div className="contact-detail">
