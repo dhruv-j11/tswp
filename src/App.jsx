@@ -233,7 +233,7 @@ const styles = `
     justify-content: center; align-items: center; text-align: center;
     padding: 0 48px; position: relative; overflow: hidden;
   }
-  .hero-video-bg { position: absolute; inset: 0; z-index: 0; overflow: hidden; }
+  .hero-video-bg { position: absolute; inset: 0; z-index: 0; overflow: hidden; background: #0a0a0f;  }
   .hero-video-bg video {
     width: 100%; height: 100%; object-fit: cover;
     filter: blur(16px) brightness(0.3); opacity: 0.85; transform: scale(1.08);
@@ -927,7 +927,10 @@ function HeroSection({ setPage }) {
   return (
     <section className="hero">
       <div className="hero-video-bg">
-        <video ref={videoRef} autoPlay muted loop playsInline>
+      <video ref={videoRef} autoPlay muted loop playsInline
+  style={{ opacity: 0, transition: 'opacity 0.8s ease' }}
+  onLoadedData={(e) => { e.target.style.opacity = 1; }}
+>
           <source src="/waterfootage.mp4" type="video/mp4" />
         </video>
       </div>
