@@ -77,7 +77,7 @@ const TEAM = [
     link: "https://www.linkedin.com/in/dhruvjjoshi/",
   },
   {
-    name: "Sophia Yensen", role: "Co-Founder, COO", img: "team3",
+    name: "Sophia Yenson", role: "Co-Founder, COO", img: "team3",
     bio: "Sophia manages day-to-day operations, coordinates between partners, and keeps the organization running smoothly behind the scenes.",
     link: "",
   },
@@ -175,7 +175,7 @@ const styles = `
     font-size: 15px; font-weight: 700; letter-spacing: -0.01em;
     color: var(--dark); cursor: pointer; display: flex; align-items: center; gap: 10px;
   }
-  .nav-logo img { width: 34px; height: 34px; object-fit: contain; }
+  .nav-logo img { width: 40px; height: 40px; object-fit: contain; }
   .nav-links { display: flex; align-items: center; gap: 32px; list-style: none; }
   .nav-links li {
     font-size: 13px; font-weight: 500; letter-spacing: 0.02em;
@@ -350,7 +350,7 @@ const styles = `
     width: 60px; height: 60px;
     top: -20px; left: 75%;
   }
-  .nerd-peek img { width: 100%; height: 100%; object-fit: contain; }
+  .-peek img { width: 100%; height: 100%; object-fit: contain; }
 
   /* Sections */
   .section { padding: 160px 48px; max-width: 1200px; margin: 0 auto; position: relative; }
@@ -712,8 +712,8 @@ const styles = `
     .footer-inner { grid-template-columns: 1fr 1fr; gap: 32px; }
     .footer { padding: 64px 28px 36px; }
     .cursor-dot, .cursor-ring { display: none; }
-    .mascot, .big-nerd { display: none; }
-    .nerd-peek { display: none; }
+    .mascot, .big- { display: none; }
+    .-peek { display: none; }
     .chatbot-panel { width: calc(100% - 32px); right: 16px; bottom: 80px; }
   }
   @media (max-width: 600px) {
@@ -835,10 +835,10 @@ function CustomMascot({ src, size=56, top, bottom, left, right, style={} }) {
 }
 
 
-function BigNerd({ width = 500, top, bottom, left, right, rotate = -45, opacity = 0.18, drift = false, style = {} }) {
+function Big({ width = 500, top, bottom, left, right, rotate = -45, opacity = 0.18, drift = false, style = {} }) {
   return (
     <div
-      className={`big-nerd ${drift ? 'big-nerd-drift' : ''}`}
+      className={`big- ${drift ? 'big--drift' : ''}`}
       style={{
         width, height: width, top, bottom, left, right,
         opacity,
@@ -846,7 +846,7 @@ function BigNerd({ width = 500, top, bottom, left, right, rotate = -45, opacity 
         ...style,
       }}
     >
-      <img src="/nerd-water.png" alt="" />
+      <img src="/-water.png" alt="" />
     </div>
   );
 }
