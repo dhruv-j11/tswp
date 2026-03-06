@@ -350,7 +350,7 @@ const styles = `
     width: 60px; height: 60px;
     top: -20px; left: 75%;
   }
-  .-peek img { width: 100%; height: 100%; object-fit: contain; }
+  .nerd-peek img { width: 100%; height: 100%; object-fit: contain; }
 
   /* Sections */
   .section { padding: 160px 48px; max-width: 1200px; margin: 0 auto; position: relative; }
@@ -712,8 +712,8 @@ const styles = `
     .footer-inner { grid-template-columns: 1fr 1fr; gap: 32px; }
     .footer { padding: 64px 28px 36px; }
     .cursor-dot, .cursor-ring { display: none; }
-    .mascot, .big- { display: none; }
-    .-peek { display: none; }
+    .mascot, .big-nerd { display: none; }
+    .nerd-peek { display: none; }
     .chatbot-panel { width: calc(100% - 32px); right: 16px; bottom: 80px; }
   }
   @media (max-width: 600px) {
@@ -835,10 +835,10 @@ function CustomMascot({ src, size=56, top, bottom, left, right, style={} }) {
 }
 
 
-function Big({ width = 500, top, bottom, left, right, rotate = -45, opacity = 0.18, drift = false, style = {} }) {
+function BigNerd({ width = 500, top, bottom, left, right, rotate = -45, opacity = 0.18, drift = false, style = {} }) {
   return (
     <div
-      className={`big- ${drift ? 'big--drift' : ''}`}
+      className={`big-nerd ${drift ? 'big-nerd-drift' : ''}`}
       style={{
         width, height: width, top, bottom, left, right,
         opacity,
@@ -846,7 +846,7 @@ function Big({ width = 500, top, bottom, left, right, rotate = -45, opacity = 0.
         ...style,
       }}
     >
-      <img src="/-water.png" alt="" />
+      <img src="/nerd-water.png" alt="" />
     </div>
   );
 }
