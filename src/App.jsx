@@ -66,6 +66,7 @@ const VALUES = [
 ];
 
 const TEAM = [
+ 
   {
     name: "Valerie Mao", role: "Founder, CEO", img: "team1",
     bio: "Valerie, an Architectural Engineering student at the University of Waterloo founded The Student Water Project\u2122 to bridge the gap between student energy and real world impact.",
@@ -97,15 +98,16 @@ const TEAM = [
     link: "https://www.linkedin.com/in/denise-rebello/",
   },
   {
-    name: "Dr. Sara Beck, PhD", role: "Senior Partner", img: "team7",
-    bio: "A researcher at UBC, Dr. Beck leads the UV-LED research program and oversees the technical side of field deployments.",
-    link: "https://www.linkedin.com/in/sara-beck/",
-  },
-  {
     name: "Dr. Paul O. Nyangaresi, PhD", role: "Senior Partner", img: "team8",
-    bio: "A UBC postdoctoral fellow and researcher, Dr. Nyangaresi leads the deployment of projects alongside Dr. Beck.",
+    bio: "A UBC postdoctoral fellow and researcher, Dr. Nyangaresi leads the deployment of projects alongside his own NGO.",
     link: "https://www.linkedin.com/in/paul-onkundi-nyangaresi-b6074341/",
   },
+  {
+    name: "Join us today!", role: "", img: "",
+    bio: "Contact us today and ask about how you can help The Student Water Project.",
+    link: "https://www.thestudentwaterproject.vercel.app",
+  },
+
 ];
 
 
