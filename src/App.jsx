@@ -103,7 +103,7 @@ const TEAM = [
     link: "https://www.linkedin.com/in/paul-onkundi-nyangaresi-b6074341/",
   },
   {
-    name: "Join us today!", role: "", img: "",
+    name: "Join us today!", role: "The Student Water Project.", img: "src/Water_Droplet_Waving.png",
     bio: "Contact us today and ask about how you can help The Student Water Project.",
     link: "https://www.thestudentwaterproject.vercel.app",
   },
