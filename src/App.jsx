@@ -68,7 +68,7 @@ const VALUES = [
 const TEAM = [
  
   {
-    name: "Valerie Mao", role: "Founder, CEO", img: "team1",
+    name: "Valerie Mao", role: "Co-founder, CEO", img: "team1",
     bio: "Valerie, an Architectural Engineering student at the University of Waterloo founded The Student Water Project\u2122 to bridge the gap between student energy and real world impact.",
     link: "https://www.linkedin.com/in/valerie-mao-903167319/",
   },
