@@ -102,11 +102,6 @@ const TEAM = [
     bio: "A UBC postdoctoral fellow and researcher, Dr. Nyangaresi leads the deployment of projects alongside his own NGO.",
     link: "https://www.linkedin.com/in/paul-onkundi-nyangaresi-b6074341/",
   },
-  {
-    name: "", role: "Join us today!", img: "",
-    bio: "Contact us today and ask about how you can help The Student Water Project.",
-    link: "https://www.thestudentwaterproject.vercel.app",
-  },
 
 ];
 
